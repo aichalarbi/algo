@@ -1,0 +1,45 @@
+ALGORITHM algorithm_name
+VAR
+    ch:STRING
+    m,v,l:INTEGER
+BEGIN
+    read(ch)
+    m:=0
+    v:=0
+    l:=ch.len
+    FOR i FROM 1 TO ch.length  DO
+        IF (ch[i] in "OIYEAU") or (ch[i] in "oiyeau" ) THEN
+            v:=v+1
+        ELSE_IF (ch[i]=" ") THEN
+            m=m+1
+        END_IF
+    END_FOR
+    write("the number of characters=",l)
+    write("the number of words is =",m)
+    write("the number of vowels=",v)
+
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
